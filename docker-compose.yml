@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+    jarowa_web:
+        build: ./jarowa_web
+        ports:
+            - "8080:80"
+        labels:
+            com.microsoft.acs.dcos.marathon.healthcheck.path: '/'

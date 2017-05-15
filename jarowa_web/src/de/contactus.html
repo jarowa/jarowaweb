@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jarowa AG</title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Jarowa Enab.le" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //custom-theme -->
+<link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="/js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<link rel="stylesheet" href="/css/flexslider.css" type="text/css" media="screen" property="" />
+<!-- font-awesome-icons -->
+<link href="/css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome-icons -->
+<script type="text/javascript" src="//maps.googleapis.com/maps/api/js"></script>
+<link href="//fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+</head>
+	
+<body>
+<!-- banner -->
+	<div class="banner1">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header navbar-left">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<h1 style="color:white;"><img src="/images/logo.png" height="35px" style="padding-bottom: 3px;"> JAROWA</h1>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav class="link-effect-2" id="link-effect-2">
+						<ul class="nav navbar-nav">
+							<li><a href="/en/index.html" class="effect-3">Home</a></li>
+							<li><a href="/" class="effect-3">Login</a></li>
+							<li><a href="/en" class="effect-3">EN</a></li>
+						</ul>
+					</nav>
+				</div>
+			</nav>
+		</div>
+	</div>
+<!-- //banner -->
+<!-- breadcrumbs -->
+	<div class="breadcrumbs">
+		<div class="container">
+			<div class="w3layouts_breadcrumbs_left">
+				<ul>
+					<li><a href="/en/index.html">Home</a><span>/</span></li>
+					<li>Contact Us</li>
+				</ul>
+			</div>
+			<div class="w3layouts_breadcrumbs_right">
+				
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //breadcrumbs -->
+<!-- mail -->
+	<div id="map"></div>
+	<div class="banner-bottom">
+		<div class="container">
+			<div class="agileits_heading_section">
+				<!-- img src="/images/2.png" alt=" " class="img-responsive" /-->
+				<h3 class="wthree_head">mit uns kontakt aufnehmen</h3>
+				<p class="agileinfo_para">Please leave us a message to get back to you</p>
+			</div>
+			<div class="w3ls_portfolio_grids w3_agile_mail_grids">	
+				<form action="#" method="post">
+					<div class="col-md-6 w3_agile_mail_grid">
+						<span class="input input--ichiro">
+							<input class="input__field input__field--ichiro" type="text" id="input-25" placeholder=" " required="" />
+							<label class="input__label input__label--ichiro" for="input-25">
+								<span class="input__label-content input__label-content--ichiro">Name</span>
+							</label>
+						</span>
+						<span class="input input--ichiro">
+							<input class="input__field input__field--ichiro" type="email" id="input-26" placeholder=" " required="" />
+							<label class="input__label input__label--ichiro" for="input-26">
+								<span class="input__label-content input__label-content--ichiro">Email</span>
+							</label>
+						</span>
+						<span class="input input--ichiro">
+							<input class="input__field input__field--ichiro" type="text" id="input-27" placeholder=" " required="" />
+							<label class="input__label input__label--ichiro" for="input-27">
+								<span class="input__label-content input__label-content--ichiro">Kontaktnummer</span>
+							</label>
+						</span>
+						<input type="submit" value="Submit">
+					</div>
+					<div class="col-md-6 w3_agile_mail_grid">
+						<textarea name="Message" placeholder="Ihre nachricht" required=""></textarea>
+					</div>
+					<div class="clearfix"> </div>
+				</form>
+			</div>
+		</div>
+	</div>
+<!-- //mail -->
+	<script type="text/javascript">
+		// When the window has finished loading create our google map below
+		google.maps.event.addDomListener(window, 'load', init);
+	
+		function init() {
+			// Basic options for a simple Google Map
+			// For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+			var mapOptions = {
+				// How zoomed in you want the map to start at (always required)
+				zoom: 13,
+
+				// The latitude and longitude to center the map (always required)
+				center: new google.maps.LatLng(47.1825673,8.5162925), // New York
+
+				// How you would like to style the map. 
+				// This is where you would paste any style found on Snazzy Maps.
+				styles: [{"featureType":"administrative.locality","elementType":"all","stylers":[{"hue":"#2c2e33"},{"saturation":7},{"lightness":19},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"simplified"}]},{"featureType":"poi","elementType":"all","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"hue":"#bbc0c4"},{"saturation":-93},{"lightness":31},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"hue":"#bbc0c4"},{"saturation":-93},{"lightness":31},{"visibility":"on"}]},{"featureType":"road.arterial","elementType":"labels","stylers":[{"hue":"#bbc0c4"},{"saturation":-93},{"lightness":-2},{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"hue":"#e9ebed"},{"saturation":-90},{"lightness":-8},{"visibility":"simplified"}]},{"featureType":"transit","elementType":"all","stylers":[{"hue":"#e9ebed"},{"saturation":10},{"lightness":69},{"visibility":"on"}]},{"featureType":"water","elementType":"all","stylers":[{"hue":"#e9ebed"},{"saturation":-78},{"lightness":67},{"visibility":"simplified"}]}]
+			};
+
+			// Get the HTML DOM element that will contain your map 
+			// We are using a div with id="map" seen below in the <body>
+			var mapElement = document.getElementById('map');
+
+			// Create the Google Map using our element and options defined above
+			var map = new google.maps.Map(mapElement, mapOptions);
+
+			// Let's also add a marker while we're at it
+			var marker = new google.maps.Marker({
+				position: {lat: 47.1825673, lng: 8.5162925},
+				map: map,
+				title: 'Jarowa AG, Industriestrasse 47, 6300 Zug'
+			});
+		}
+	</script>
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="w3ls_address_mail_footer_grids">
+				<div class="col-md-4 w3ls_footer_grid_left">
+					<div class="wthree_footer_grid_left">
+						<i class="fa fa-map-marker" aria-hidden="true"></i>
+					</div>
+					<p>Industriestrasse 47, 6300 Zug</p>
+				</div>
+				<div class="col-md-4 w3ls_footer_grid_left">
+					<div class="wthree_footer_grid_left">
+						<i class="fa fa-phone" aria-hidden="true"></i>
+					</div>
+					<p>+41 78 656 70 74 </p>
+				</div>
+				<div class="col-md-4 w3ls_footer_grid_left">
+					<div class="wthree_footer_grid_left">
+						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					</div>
+					<p><a href="mailto:info@example.com">info@jarowa.ch</a> 
+					</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="/js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- start-smooth-scrolling -->
+<script type="text/javascript" src="/js/move-top.js"></script>
+<script type="text/javascript" src="/js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smooth-scrolling -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>
